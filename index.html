@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Task 1</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      h1 {
+        font-size: 5rem;
+      }
+
+      .yellow {
+        color: yellow;
+      }
+
+      .green {
+        color: green;
+      }
+
+      button {
+        height: 3rem;
+        width: 12rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="text" class="yellow green">Home Page</h1>
+    <button id="btn">CLICK</button>
+    <script type="text/javascript">
+      function myFunction() {
+        var element = document.getElementById("text");
+        element.classList.toggle("green");
+      }
+
+      document.getElementById("btn").addEventListener("click", myFunction);
+    </script>
+  </body>
+</html>
